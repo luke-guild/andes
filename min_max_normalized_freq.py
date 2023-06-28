@@ -4,7 +4,6 @@ IN_LOC = "C:/Users/Luke/Documents/genomics/andes/gbif_analysis/data"
 OUT_LOC = "C:/Users/Luke/Documents/genomics/andes/gbif_analysis/output"
 ERRORS_LOC = OUT_LOC
 
-# Load the normalized frequency CSV
 input_csv = 'species_elevation_freq_normalized/species_elevation_freq_normalized.a.10.5.csv'
 output_csv = 'species_min_max_elevation.0.05.a.10.5.csv'
 
@@ -38,5 +37,3 @@ with open(output_csv, 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Species', 'Min Elevation Bracket', 'Max Elevation Bracket'])
     writer.writerows(species_elevation_ranges)
-
-print(f"Species minimum and maximum elevation brackets with a normalized frequency greater than 0.01 have been written to '{output_csv}'")

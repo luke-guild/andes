@@ -32,7 +32,7 @@ In order to sanitize the data we had to ensure there were no duplicate records b
 
 We generated artifacts for each latitudal range independently. From each range's occurrence set we calculated:
 - Counts for how many times a species occurred in a 100m elevation range (keep in mind this is only tracking 1 occurrence per site)
-```
+```csv
 species,0-99,100-199,200-299,300-399,...
 Abatia parviflora,0,0,0,0,...
 Acalypha cuneata,0,2,1,8,...
@@ -40,7 +40,7 @@ Acalypha cuneata,0,2,1,8,...
 ```
 
 - The relative frequency at which each species occurred in each elevation bucket compared to the rest of the species in the set
-```
+```csv
 species,0-99,100-199,200-299,300-399,...
 Abatia parviflora,0.0,0.0,0.0,0.0,...
 Acalypha cuneata,0.0,0.0003471017007983339,0.00015928639694170118,0.0012511729746637473,...
@@ -48,15 +48,15 @@ Acalypha cuneata,0.0,0.0003471017007983339,0.00015928639694170118,0.001251172974
 ```
 
 - The above frequencies normalized by the elevational range they're present in
-```
+```csv
 species,0-99,100-199,200-299,300-399,...
 Abatia parviflora,0.0,0.0,0.0,0.0,...
 Acalypha cuneata,0.0,0.0036101083032490976,0.005555555555555556,0.020512820512820513,...
 ...
 ```
 
-- and finally, species' minimum and maximum elevation buckets where they occur with a normalized frequency greater than or equal to a given threshhold (0.01 and 0.05)
-```
+- Each species' minimum and maximum elevation buckets where they occur with a normalized frequency greater than or equal to a given threshhold (0.01 and 0.05)
+```csv
 Species,Min Elevation Bracket,Max Elevation Bracket
 Abatia parviflora,1900-1999,3300-3399
 Acalypha cuneata,300-399,300-399
@@ -64,3 +64,13 @@ Acalypha cuneata,300-399,300-399
 ```
 
 Code for performing this analysis can be found in `counts_and_freq.py`, `normalize.py`, and `min_max_normalized_freq.py`.
+
+We then generated a combined data set that compared the elevation ranges of each species within each latitudinal band, and created versions for each threshhold (0.01 and 0.05) used in generating the normalized frequencies. The `range/diff` is calculated from the midpoint of each elevation bucket (ie 1450 for 1400-1499):
+```csv
+species,a.10.5,b.5.0,c.0.-5,d.-5.-10,e.-10.-15,f.-15.-20,g.-20.-25
+Abatia parviflora,300,1600,2600,800,0,N/A,N/A
+Acalypha cuneata,0,800,2000,1700,1100,400,N/A
+...
+```
+
+Code for performing this analysis can be found in `species_elevation_diff.py`
