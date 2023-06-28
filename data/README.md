@@ -65,6 +65,8 @@ Acalypha cuneata,300-399,300-399
 
 Code for performing this analysis can be found in `counts_and_freq.py`, `normalize.py`, and `min_max_normalized_freq.py`.
 
+___
+
 We then generated a combined data set that compared the elevation ranges of each species within each latitudinal band, and created versions for each threshhold (0.01 and 0.05) used in generating the normalized frequencies. The `range/diff` is calculated from the midpoint of each elevation bucket (ie 1450 for 1400-1499):
 ```csv
 species,a.10.5,b.5.0,c.0.-5,d.-5.-10,e.-10.-15,f.-15.-20,g.-20.-25
@@ -74,3 +76,15 @@ Acalypha cuneata,0,800,2000,1700,1100,400,N/A
 ```
 
 Code for performing this analysis can be found in `species_elevation_diff.py`
+
+___
+
+We also generated a combined data set that counted how many times, in each latitudinal band, a species occurred in only one or two buckets:
+```csv
+species,one_bucket,two_buckets
+a.10.5,149,120
+b.5.0,199,131
+...
+```
+
+Code for performing this analysis can be found in `species_elevation_count_summary.py`
