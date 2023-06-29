@@ -81,7 +81,7 @@ ___
 
 We also generated a combined data set that counted how many times, in each latitudinal band, a species occurred in only one or two buckets:
 ```csv
-species,one_bucket,two_buckets
+species,q1,q2
 a.10.5,149,120
 b.5.0,199,131
 ...

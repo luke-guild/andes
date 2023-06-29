@@ -28,7 +28,7 @@ for dataset in datasets:
 os.chdir(OUT_LOC)
 with open('species_elevation_count_summary.csv', 'w', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(['species', 'one_bucket', 'two_buckets'])
+    writer.writerow(['species', 'q1', 'q2'])
     for dataset, data in output.items():
         row = [dataset] + [data[0], data[1]]
         writer.writerow(row)
