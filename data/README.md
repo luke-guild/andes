@@ -67,7 +67,7 @@ Code for performing this analysis can be found in `counts_and_freq.py`, `normali
 
 ___
 
-We then generated a combined data set that compared the elevation ranges of each species within each latitudinal band, and created versions for each threshhold (0.01 and 0.05) used in generating the normalized frequencies. The `range/diff` is calculated from the midpoint of each elevation bucket (ie 1450 for 1400-1499):
+We generated a combined data set that compared the elevation ranges of each species within each latitudinal band, and created versions for each threshhold (0.01 and 0.05) used in generating the normalized frequencies. The `range/diff` is calculated from the midpoint of each elevation bucket (ie 1450 for 1400-1499):
 ```csv
 species,a.10.5,b.5.0,c.0.-5,d.-5.-10,e.-10.-15,f.-15.-20,g.-20.-25
 Abatia parviflora,300,1600,2600,800,0,N/A,N/A
@@ -79,7 +79,7 @@ Code for performing this analysis can be found in `species_elevation_diff.py`
 
 ___
 
-We also generated a combined data set that counted how many times, in each latitudinal band, a species occurred in only one or two buckets:
+We generated a combined data set that counted how many times, in each latitudinal band, a species occurred in only one or two buckets:
 ```csv
 species,q1,q2
 a.10.5,149,120
@@ -88,3 +88,16 @@ b.5.0,199,131
 ```
 
 Code for performing this analysis can be found in `species_elevation_count_summary.py`
+
+___
+
+We created a matrix of the amount of unique species located in each elevation bucket across each latitudinal band, and among the entire sampling region:
+```csv
+Region,0-99,100-199,200-299,...,Total Unique Species
+a.10.5,0,771,893,...,1811
+b.5.0,0,710,1025,...,1901
+...
+All Regions,0,1327,1546,...,2446
+```
+
+Code for performing this analysis can be found in `species_richness.py`
