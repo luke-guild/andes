@@ -78,7 +78,7 @@ Coccoloba mollis,100-199,1400-1499
 Coccoloba obovata,1200-1299,1200-1299
 Coccoloba peruviana,200-299,900-999
 Coccoloba tiliacea,1000-1099,2100-2199
-Coffea arabica,300-399,3600-3699
+Coffea arabica,300-399,2000-2099
 Condalia weberbaueri,1400-1499,1900-1999
 Condaminea corymbosa,300-399,3200-3299
 Cordia alliodora,100-199,1500-1599
@@ -235,7 +235,7 @@ Amanoa oblongifolia,700-799,1500-1599
 Amburana cearensis,200-299,1200-1299
 Ampelocera edentula,800-899,800-899
 Ampelocera ruizii,100-199,1400-1499
-Anacardium occidentale,200-299,400-499
+Anacardium occidentale,400-499,400-499
 Anadenanthera colubrina,100-199,2200-2299
 Anadenanthera columbrina,100-199,2200-2299
 Anaxagorea brevipes,400-499,400-499
@@ -345,7 +345,7 @@ Inga chartacea,400-499,700-799
 Inga cinnamomea,200-299,800-899
 Inga coruscans,200-299,500-599
 Inga densiflora,100-199,300-399
-Inga edulis,200-299,2600-2699
+Inga edulis,200-299,1200-1299
 Inga fendleriana,1200-1299,2400-2499
 Inga feuillei,200-299,1900-1999
 Inga heterophylla,200-299,1500-1599
@@ -375,7 +375,7 @@ Iryanthera ulei,200-299,200-299
 Isertia laevis,700-799,1600-1699
 Jacaranda copaia,200-299,700-799
 Jacaranda glabra,200-299,1600-1699
-Jacaranda mimosifolia,400-499,3300-3399
+Jacaranda mimosifolia,1500-1599,3300-3399
 Jacaratia digitata,200-299,2300-2399
 Joosia umbellifera,800-899,800-899
 Juglans australis,1100-1199,2100-2199
@@ -613,7 +613,7 @@ Peperomia elongata,400-499,1400-1499
 Pera glabrata,300-399,300-399
 Perebea guianensis,200-299,2200-2299
 Perrottetia gentryi,1200-1299,2300-2399
-Persea americana,200-299,3300-3399
+Persea americana,400-499,3300-3399
 Persea areolatocostae,1000-1099,2300-2399
 Persea caerulea,200-299,2500-2599
 Persea peruviana,700-799,2200-2299
@@ -650,7 +650,7 @@ Bellucia pentamera,200-299,1500-1599
 Blakea multiflora,700-799,2300-2399
 Piper aduncum,200-299,2800-2899
 Piper amalago,200-299,1900-1999
-Piper arboreum,100-199,1400-1499
+Piper arboreum,400-499,1400-1499
 Piper cernuum,1000-1099,2200-2299
 Piper crassinervium,200-299,2400-2499
 Piper heterophyllum,200-299,2400-2499
@@ -712,7 +712,6 @@ Protium unifoliolatum,200-299,400-499
 Prumnopitys harmsiana,2200-2299,2800-2899
 Prumnopitys montana,2900-2999,2900-2999
 Prunus debilis,200-299,1600-1699
-Prunus huantensis,3300-3399,3300-3399
 Prunus integrifolia,1300-1399,3500-3599
 Prunus myrtifolia,2100-2199,2100-2199
 Prunus stipulata,2400-2499,3100-3199
@@ -1009,7 +1008,7 @@ Cedrela montana,3600-3699,3600-3699
 Cedrela odorata,100-199,2800-2899
 Ceiba chodatii,400-499,2200-2299
 Ceiba insignis,400-499,400-499
-Ceiba pentandra,100-199,400-499
+Ceiba pentandra,100-199,100-199
 Ceiba samauma,200-299,500-599
 Ceiba speciosa,100-199,1500-1599
 Celtis iguanaea,200-299,2200-2299
@@ -1019,7 +1018,6 @@ Ceroxylon vogelianum,1900-1999,1900-1999
 Cespedesia spathulata,900-999,1300-1399
 Cestrum conglomeratum,700-799,3600-3699
 Cestrum megalophyllum,400-499,2200-2299
-Cestrum parqui,2600-2699,2800-2899
 Cestrum racemosum,200-299,800-899
 Chamaedorea linearis,400-499,2200-2299
 Chamaedorea pinnatifrons,200-299,2100-2199

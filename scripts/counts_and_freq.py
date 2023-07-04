@@ -107,11 +107,14 @@ def write_matrix_to_file(species_matrix = {}, matrix_key='count', filname = 'out
 """
 """
 if __name__ == "__main__":
-    occurrences = read_gbif_data_to_occ_array('deduped_occurrences/occurrences_deduped.g.-20.-25.csv')
-    min_elevation, max_elevation = get_elevation_range_from_occurrences(occurrences)
-    species_matrix = build_species_matrix(occurrences, max_elevation)
-    species_matrix = hydrate_species_counts(occurrences, species_matrix)
-    frequency_denominators = calculate_frequency_denominators(species_matrix)
-    species_matrix = hydrate_species_frequencies(species_matrix, frequency_denominators)
-    write_matrix_to_file(species_matrix, 'count', 'species_elevation_count.g.-20.-25.csv')
-    write_matrix_to_file(species_matrix, 'frequency', 'species_elevation_freq.g.-20.-25.csv')
+    datasets = ['a.10.5', 'b.5.0', 'c.0.-5', 'd.-5.-10', 'e.-10.-15', 'f.-15.-20', 'g.-20.-25']
+
+    for dataset in datasets:
+        occurrences = read_gbif_data_to_occ_array(f'filtered_occurrences/filtered_occurrences.{dataset}.csv')
+        min_elevation, max_elevation = get_elevation_range_from_occurrences(occurrences)
+        species_matrix = build_species_matrix(occurrences, max_elevation)
+        species_matrix = hydrate_species_counts(occurrences, species_matrix)
+        frequency_denominators = calculate_frequency_denominators(species_matrix)
+        species_matrix = hydrate_species_frequencies(species_matrix, frequency_denominators)
+        write_matrix_to_file(species_matrix, 'count', f'species_elevation_count.{dataset}.csv')
+        write_matrix_to_file(species_matrix, 'frequency', f'species_elevation_freq.{dataset}.csv')
