@@ -26,9 +26,13 @@ In total, there were 2574 unique accepted species and 7 different latitudinal ra
 
 ## Step 2: Data cleaning
 
-In order to sanitize the data we had to ensure there were no duplicate records both within a latitudinal range and between latitudinal ranges. For the former, we ran through all occurrences in each file (the files are distinct latitudinal ranges) and eliminated any records that were duplicated on species, latitude, longitude, and elevation. This not only eliminated any possible erroneous duplication of the same records but also removed multiple observations recorded from the same site, resulting in a 1-record-per-site occurrence list. Code for performing this deduplication can be found in `dedupe.py`. We also needed to account for the fact that there was some overlap in the occurrences pulled for different latitudinal ranges when considering the minimum lat value for one range vs the maximum lat value for the next range. For example, a range query of `10,5` and a range query of `5,0` have overlap at the `5.0` latitudinal value. We elected to eliminate occurrences at the minimum lat value for each range, meaning that all occurrences at exactly latitude `5.0` in the `10,5` range set were deleted, all of the `0.0` occurrences in the `5,0` set, etc.. This process was performed by hand. It's important to note that this process did not eliminate any unique data from the overall occurrence data collection, occurrence removed from one file were all present in the subsequent file. This left us with a total collection of 386,962 occurrences.
+In order to sanitize the data we had to ensure there were no duplicate records both within a latitudinal range and between latitudinal ranges. For the former, we ran through all occurrences in each file (the files are distinct latitudinal ranges) and eliminated any records that were duplicated on species, latitude, longitude, and elevation. This not only eliminated any possible erroneous duplication of the same records but also removed multiple observations recorded from the same site, resulting in a 1-record-per-site occurrence list. Code for performing this deduplication can be found in `scripts/dedupe.py`. We also needed to account for the fact that there was some overlap in the occurrences pulled for different latitudinal ranges when considering the minimum lat value for one range vs the maximum lat value for the next range. For example, a range query of `10,5` and a range query of `5,0` have overlap at the `5.0` latitudinal value. We elected to eliminate occurrences at the minimum lat value for each range, meaning that all occurrences at exactly latitude `5.0` in the `10,5` range set were deleted, all of the `0.0` occurrences in the `5,0` set, etc.. This process was performed by hand. It's important to note that this process did not eliminate any unique data from the overall occurrence data collection, occurrence removed from one file were all present in the subsequent file. This left us with a total collection of 386,962 occurrences.
 
-## Step 3: Analysis
+## Step 3: Data Filtering
+
+In order to avoid refetching data if any analytical parameters changed, we overfetched a little and ran some filtering on the data afterwords. The key attributes we looked to filter from the data set were any occurrences that occurred outside of Ecuador, Bolivia, Peru, and Colombia. We also filtered out any occurreces that were not Preserved Specimens. The original data was kept in `data/raw_occurrences/` and `data/deduped_occurrences/` in case we needed a different filtering strategy. All calculations in Step 4: Analysis are performed on the `data/filtered_occurrences/` data set. The code for this filtering is in `scripts/filter_occurrences.py`.
+
+## Step 4: Analysis
 
 We generated artifacts for each latitudal range independently. From each range's occurrence set we calculated:
 - Counts for how many times a species occurred in a 100m elevation range (keep in mind this is only tracking 1 occurrence per site)
@@ -63,7 +67,7 @@ Acalypha cuneata,300-399,300-399
 ...
 ```
 
-Code for performing this analysis can be found in `counts_and_freq.py`, `normalize.py`, and `min_max_normalized_freq.py`.
+Code for performing this analysis can be found in `scripts/counts_and_freq.py`, `scripts/normalize.py`, and `scripts/min_max_normalized_freq.py`.
 
 ___
 
@@ -75,7 +79,7 @@ Acalypha cuneata,0,800,2000,1700,1100,400,N/A
 ...
 ```
 
-Code for performing this analysis can be found in `species_elevation_diff.py`
+Code for performing this analysis can be found in `scripts/species_elevation_diff.py`
 
 ___
 
@@ -87,7 +91,7 @@ b.5.0,199,131
 ...
 ```
 
-Code for performing this analysis can be found in `species_elevation_count_summary.py`
+Code for performing this analysis can be found in `scripts/species_elevation_count_summary.py`
 
 ___
 
@@ -100,4 +104,4 @@ b.5.0,0,710,1025,...,1901
 All Regions,0,1327,1546,...,2446
 ```
 
-Code for performing this analysis can be found in `species_richness.py`
+Code for performing this analysis can be found in `scripts/species_richness.py`
