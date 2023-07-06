@@ -4,7 +4,7 @@ import os
 
 LOC = "C:/Users/Luke/Documents/genomics/andes/gbif_analysis"
 datasets = ['a.10.5', 'b.5.0', 'c.0.-5', 'd.-5.-10', 'e.-10.-15', 'f.-15.-20', 'g.-20.-25']
-allowed_countries = {'Colombia', 'Peru', 'Bolivia (Plurinational State of)', 'Ecuador'}
+allowed_countries = {'Colombia', 'Peru', 'Bolivia (Plurinational State of)', 'Ecuador', 'Argentina', 'Venezuela (Bolivarian Republic of)'}
 allowed_bor = {'PRESERVED_SPECIMEN'}
 
 

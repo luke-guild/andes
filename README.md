@@ -30,7 +30,7 @@ In order to sanitize the data we had to ensure there were no duplicate records b
 
 ## Step 3: Data Filtering
 
-In order to avoid refetching data if any analytical parameters changed, we overfetched a little and ran some filtering on the data afterwords. The key attributes we looked to filter from the data set were any occurrences that occurred outside of Ecuador, Bolivia, Peru, and Colombia. We also filtered out any occurreces that were not Preserved Specimens. The original data was kept in `data/raw_occurrences/` and `data/deduped_occurrences/` in case we needed a different filtering strategy. All calculations in Step 4: Analysis are performed on the `data/filtered_occurrences/` data set. The code for this filtering is in `scripts/filter_occurrences.py`.
+In order to avoid refetching data if any analytical parameters changed, we overfetched a little and ran some filtering on the data afterwords. The key attributes we looked to filter from the data set were any occurrences that occurred outside of Ecuador, Bolivia, Peru, Venezuela, Argentina, and Colombia. We also filtered out any occurreces that were not Preserved Specimens. The original data was kept in `data/raw_occurrences/` and `data/deduped_occurrences/` in case we needed a different filtering strategy. All calculations in Step 4: Analysis are performed on the `data/filtered_occurrences/` data set. The code for this filtering is in `scripts/filter_occurrences.py`.
 
 ## Step 4: Analysis
 

@@ -17,8 +17,8 @@ for dataset in datasets:
         species = row[0]
         frequencies = [float(value) for value in row[1:]]
 
-        # Find the indices of frequencies > 0.01
-        indices = [i for i, freq in enumerate(frequencies) if freq > 0.01]
+        # Find the indices of frequencies > 0.05
+        indices = [i for i, freq in enumerate(frequencies) if freq > 0.05]
 
         if indices:
             # Find the corresponding elevation brackets
@@ -32,7 +32,7 @@ for dataset in datasets:
 
     # Write the output to a new CSV file
     os.chdir(OUT_LOC)
-    output_csv = f'species_min_max_elevation.0.01.{dataset}.csv'
+    output_csv = f'species_min_max_elevation.0.05.{dataset}.csv'
     with open(output_csv, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['Species', 'Min Elevation Bracket', 'Max Elevation Bracket'])
