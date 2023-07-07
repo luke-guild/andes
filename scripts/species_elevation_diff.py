@@ -65,27 +65,60 @@ for threshold in norm_thresholds:
     output_csv = f'species_elevation_diff_wide_pivot.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['species', 'region', 'range'])
+        writer.writerow(['species', 'genus', 'region', 'range', 'genus_in_region'])
+        region_genus_count = {}
+
+        # loop once for genus tallies
         for species, data in species_data.items():
             if (len(data.values()) < 3):
                 continue
-            for dataset in datasets:
-                if data.get(dataset):
-                    row = [species, dataset] + [data.get(dataset)]
+            genus = species.split(' ')[0]
+            for region in datasets:
+                if data.get(region):
+                    if (genus, region) in region_genus_count:
+                        region_genus_count[(genus, region)] += 1
+                    else:
+                        region_genus_count[(genus, region)] = 1
+        
+        # loop again to write rows
+        for species, data in species_data.items():
+            if (len(data.values()) < 3):
+                continue
+            genus = species.split(' ')[0]
+            for region in datasets:
+                if data.get(region):
+                    row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
                     writer.writerow(row)
 
     # the above "pivotted wide" output but without 1 region
     output_csv = f'species_elevation_diff_wide_pivot_filtered.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['species', 'region', 'range'])
+        writer.writerow(['species', 'genus', 'region', 'range', 'genus_in_region'])
+        region_genus_count = {}
+
+        # loop once for genus tallies
+        for species, data in species_data.items():
+            valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+            if (len(data.values()) < 3):
+                continue
+            genus = species.split(' ')[0]
+            for region in datasets:
+                if region != 'g.-20.-25' and data.get(region):
+                    if (genus, region) in region_genus_count:
+                        region_genus_count[(genus, region)] += 1
+                    else:
+                        region_genus_count[(genus, region)] = 1
+
+        # loop again to write rows
         for species, data in species_data.items():
             valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
             if (len(valid_regions) < 3):
                 continue
-            for dataset in datasets:
-                if dataset != 'g.-20.-25' and data.get(dataset):
-                    row = [species, dataset] + [data.get(dataset)]
+            genus = species.split(' ')[0]
+            for region in datasets:
+                if region != 'g.-20.-25' and data.get(region):
+                    row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
                     writer.writerow(row)
 
     # species presence (after threshhold)
