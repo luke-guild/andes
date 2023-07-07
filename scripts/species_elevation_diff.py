@@ -74,6 +74,20 @@ for threshold in norm_thresholds:
                     row = [species, dataset] + [data.get(dataset)]
                     writer.writerow(row)
 
+    # the above "pivotted wide" output but without 1 region
+    output_csv = f'species_elevation_diff_wide_pivot_filtered.{threshold}.csv'
+    with open(output_csv, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['species', 'region', 'range'])
+        for species, data in species_data.items():
+            valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+            if (len(valid_regions) < 3):
+                continue
+            for dataset in datasets:
+                if dataset != 'g.-20.-25' and data.get(dataset):
+                    row = [species, dataset] + [data.get(dataset)]
+                    writer.writerow(row)
+
     # species presence (after threshhold)
     output_csv = f'species_elevation_presence.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
