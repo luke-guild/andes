@@ -61,6 +61,18 @@ for threshold in norm_thresholds:
             row = [species] + [data.get(dataset, 'N/A') for dataset in datasets]
             writer.writerow(row)
 
+    # the above "wide" output but transposed to fit ggplot better
+    output_csv = f'species_elevation_diff_wide_pivot.{threshold}.csv'
+    with open(output_csv, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['species', 'region', 'range'])
+        for species, data in species_data.items():
+            if (len(data.values()) < 3):
+                continue
+            for dataset in datasets:
+                row = [species, dataset] + [data.get(dataset, 'N/A')]
+                writer.writerow(row)
+
     # species presence (after threshhold)
     output_csv = f'species_elevation_presence.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
