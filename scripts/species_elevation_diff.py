@@ -70,8 +70,9 @@ for threshold in norm_thresholds:
             if (len(data.values()) < 3):
                 continue
             for dataset in datasets:
-                row = [species, dataset] + [data.get(dataset, 'N/A')]
-                writer.writerow(row)
+                if data.get(dataset):
+                    row = [species, dataset] + [data.get(dataset)]
+                    writer.writerow(row)
 
     # species presence (after threshhold)
     output_csv = f'species_elevation_presence.{threshold}.csv'
