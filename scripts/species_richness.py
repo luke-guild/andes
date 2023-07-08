@@ -37,7 +37,7 @@ for dataset in datasets:
                 unique_species_set[row[0]] = 1
 
 os.chdir(OUT_LOC)
-with open('species_richness.csv', 'w', newline='') as f:
+with open('region_richness.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Region'] + max_headers + ['Total Unique Species'])
 

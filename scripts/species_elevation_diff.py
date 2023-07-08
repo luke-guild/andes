@@ -4,23 +4,26 @@ import os
 IN_LOC = "C:/Users/Luke/Documents/genomics/andes/gbif_analysis/data"
 OUT_LOC = "C:/Users/Luke/Documents/genomics/andes/gbif_analysis/output"
 
-def midpoint(elevation_bracket):
+
+"""
+"""
+def midpoint(elevation_bracket=""):
     if elevation_bracket == 'N/A':
         return None
     low, _ = map(int, elevation_bracket.split('-'))
     return low + 50  # get midpoint
 
-norm_thresholds = ['0.01', '0.05']
-datasets = ['a.10.5', 'b.5.0', 'c.0.-5', 'd.-5.-10', 'e.-10.-15', 'f.-15.-20', 'g.-20.-25']
 
-for threshold in norm_thresholds:
+"""
+"""
+def read_in_min_max_data(threshold="", regions=[]):
     os.chdir(IN_LOC)
 
     species_data = {}
     region_presence = {}
     
-    for dataset in datasets:
-        filename = f'species_min_max_elevation/{threshold}/species_min_max_elevation.{threshold}.{dataset}.csv'
+    for region in regions:
+        filename = f'species_min_max_elevation/{threshold}/species_min_max_elevation.{threshold}.{region}.csv'
         with open(filename, 'r') as f:
             reader = csv.reader(f)
             next(reader)  # skip header
@@ -31,100 +34,95 @@ for threshold in norm_thresholds:
                 # if present in at least 1 region
                 if min_bracket is not None and max_bracket is not None:
                     # tally region presence for this species
-                    if dataset not in region_presence:
-                        region_presence[dataset] = 1
+                    if region not in region_presence:
+                        region_presence[region] = 1
                     else:
-                        region_presence[dataset] += 1
+                        region_presence[region] += 1
                     # then calculate range/diff
                     value = max_bracket - min_bracket
                     if species not in species_data:
                         species_data[species] = {}
-                    species_data[species][dataset] = value
+                    species_data[species][region] = value
 
+    return species_data, region_presence
+
+
+"""
+"""
+def write_diff_file(threshold="", regions=[], species_data={}):
     os.chdir(OUT_LOC)
+
     output_csv = f'species_elevation_diff.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['species'] + datasets)
+        writer.writerow(['species'] + regions + ['num_of_regions'])
         for species, data in species_data.items():
-            row = [species] + [data.get(dataset, 'N/A') for dataset in datasets]
+            row = [species] + [data.get(region, 'N/A') for region in regions] + [len(data.keys())]
             writer.writerow(row)
 
-    # another output csv with only "wide" ranging species that occur in at least 3 lat bands
-    output_csv = f'species_elevation_diff_wide.{threshold}.csv'
-    with open(output_csv, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['species'] + datasets)
-        for species, data in species_data.items():
-            if (len(data.values()) < 3):
-                continue
-            row = [species] + [data.get(dataset, 'N/A') for dataset in datasets]
-            writer.writerow(row)
 
-    # the above "wide" output but transposed to fit ggplot better
-    output_csv = f'species_elevation_diff_wide_pivot.{threshold}.csv'
-    with open(output_csv, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['species', 'genus', 'region', 'range', 'genus_in_region'])
-        region_genus_count = {}
+"""
+species_elevation_diff but pivotted to output 1 row per species,region pair
+always removes data from g.-20.-25
+outputs multiple data sets filtered for "width", 
+    i.e. only include data from species that occur in at least n regions
+"""
+def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}):
+    os.chdir(OUT_LOC)
 
-        # loop once for genus tallies
-        for species, data in species_data.items():
-            if (len(data.values()) < 3):
-                continue
-            genus = species.split(' ')[0]
-            for region in datasets:
-                if data.get(region):
-                    if (genus, region) in region_genus_count:
-                        region_genus_count[(genus, region)] += 1
-                    else:
-                        region_genus_count[(genus, region)] = 1
-        
-        # loop again to write rows
-        for species, data in species_data.items():
-            if (len(data.values()) < 3):
-                continue
-            genus = species.split(' ')[0]
-            for region in datasets:
-                if data.get(region):
-                    row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
-                    writer.writerow(row)
+    for width in range(len([r for r in regions if r != 'g.-20.-25'])):
+        output_csv = f'species_elevation_diff_filtered.{width + 1}.{threshold}.csv'
+        with open(output_csv, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['species', 'genus', 'region', 'range', 'genus_in_region'])
+            region_genus_count = {}
 
-    # the above "pivotted wide" output but without 1 region
-    output_csv = f'species_elevation_diff_wide_pivot_filtered.{threshold}.csv'
-    with open(output_csv, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['species', 'genus', 'region', 'range', 'genus_in_region'])
-        region_genus_count = {}
+            # loop once for genus tallies
+            for species, data in species_data.items():
+                valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                if (len(data.values()) < width + 1):
+                    continue
+                genus = species.split(' ')[0]
+                for region in regions:
+                    if region != 'g.-20.-25' and data.get(region):
+                        if (genus, region) in region_genus_count:
+                            region_genus_count[(genus, region)] += 1
+                        else:
+                            region_genus_count[(genus, region)] = 1
 
-        # loop once for genus tallies
-        for species, data in species_data.items():
-            valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
-            if (len(data.values()) < 3):
-                continue
-            genus = species.split(' ')[0]
-            for region in datasets:
-                if region != 'g.-20.-25' and data.get(region):
-                    if (genus, region) in region_genus_count:
-                        region_genus_count[(genus, region)] += 1
-                    else:
-                        region_genus_count[(genus, region)] = 1
+            # loop again to write rows
+            for species, data in species_data.items():
+                valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                if (len(valid_regions) < width + 1):
+                    continue
+                genus = species.split(' ')[0]
+                for region in regions:
+                    if region != 'g.-20.-25' and data.get(region):
+                        row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
+                        writer.writerow(row)
 
-        # loop again to write rows
-        for species, data in species_data.items():
-            valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
-            if (len(valid_regions) < 3):
-                continue
-            genus = species.split(' ')[0]
-            for region in datasets:
-                if region != 'g.-20.-25' and data.get(region):
-                    row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
-                    writer.writerow(row)
 
-    # species presence (after threshhold)
-    output_csv = f'species_elevation_presence.{threshold}.csv'
+"""
+"""
+def write_region_unique_species_count_file(threshold="", region_presence={}):
+    os.chdir(OUT_LOC)
+
+    output_csv = f'region_unique_species_count.{threshold}.csv'
     with open(output_csv, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['region', 'count'])
         for region, count in region_presence.items():
             writer.writerow([region, count])
+
+
+"""
+"""
+if __name__ == "__main__":
+    norm_thresholds = ['0.01', '0.05']
+    regions = ['a.10.5', 'b.5.0', 'c.0.-5', 'd.-5.-10', 'e.-10.-15', 'f.-15.-20', 'g.-20.-25']
+    
+    for threshold in norm_thresholds:
+        species_data, region_presence = read_in_min_max_data(threshold, regions)
+        write_diff_file(threshold, regions, species_data)
+        write_filtered_pivotted_diff_files(threshold, regions, species_data)
+        write_region_unique_species_count_file(threshold, region_presence)
