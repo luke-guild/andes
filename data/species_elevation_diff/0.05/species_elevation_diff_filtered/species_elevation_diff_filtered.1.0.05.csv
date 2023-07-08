@@ -15,6 +15,7 @@ Acalypha diversifolia,Acalypha,c.0.-5,3700,5
 Acalypha diversifolia,Acalypha,d.-5.-10,1800,5
 Acalypha diversifolia,Acalypha,e.-10.-15,1700,5
 Acalypha diversifolia,Acalypha,f.-15.-20,1700,5
+Acalypha diversifolia,Acalypha,g.-20.-25,800,2
 Acalypha macrostachya,Acalypha,a.10.5,2300,3
 Acalypha macrostachya,Acalypha,b.5.0,2400,3
 Acalypha macrostachya,Acalypha,c.0.-5,1300,5
@@ -133,6 +134,7 @@ Allomaieta pancurana,Allomaieta,a.10.5,900,3
 Allomaieta villosa,Allomaieta,a.10.5,600,3
 Allophylus edulis,Allophylus,e.-10.-15,400,9
 Allophylus edulis,Allophylus,f.-15.-20,1900,6
+Allophylus edulis,Allophylus,g.-20.-25,1700,1
 Allophylus excelsus,Allophylus,a.10.5,1700,2
 Allophylus excelsus,Allophylus,b.5.0,2300,4
 Allophylus excelsus,Allophylus,c.0.-5,1500,9
@@ -155,6 +157,7 @@ Alnus acuminata,Alnus,c.0.-5,2400,1
 Alnus acuminata,Alnus,d.-5.-10,3400,1
 Alnus acuminata,Alnus,e.-10.-15,2000,1
 Alnus acuminata,Alnus,f.-15.-20,3000,1
+Alnus acuminata,Alnus,g.-20.-25,1600,1
 Alseis blackiana,Alseis,a.10.5,400,1
 Ciliosemina pedunculata,Ciliosemina,a.10.5,1200,2
 Ciliosemina pedunculata,Ciliosemina,b.5.0,1000,1
@@ -193,6 +196,7 @@ Citrus X aurantium,Citrus,b.5.0,1500,2
 Citrus X aurantium,Citrus,c.0.-5,2000,1
 Citrus X aurantium,Citrus,d.-5.-10,1100,2
 Citrus X aurantium,Citrus,e.-10.-15,100,1
+Citrus X aurantium,Citrus,g.-20.-25,500,1
 Citrus limon,Citrus,a.10.5,1200,2
 Citrus limon,Citrus,b.5.0,1500,2
 Citrus limon,Citrus,d.-5.-10,1100,2
@@ -395,6 +399,7 @@ Cordia alliodora,Cordia,c.0.-5,2000,4
 Cordia alliodora,Cordia,d.-5.-10,2600,7
 Cordia alliodora,Cordia,e.-10.-15,1800,5
 Cordia alliodora,Cordia,f.-15.-20,1400,5
+Cordia alliodora,Cordia,g.-20.-25,1300,4
 Cordia bicolor,Cordia,a.10.5,1200,6
 Cordia bicolor,Cordia,b.5.0,200,8
 Cordia bicolor,Cordia,d.-5.-10,200,7
@@ -485,6 +490,7 @@ Coutarea hexandra,Coutarea,c.0.-5,700,1
 Coutarea hexandra,Coutarea,d.-5.-10,600,1
 Coutarea hexandra,Coutarea,e.-10.-15,1100,1
 Coutarea hexandra,Coutarea,f.-15.-20,1300,1
+Coutarea hexandra,Coutarea,g.-20.-25,1700,1
 Crepidospermum rhoifolium,Crepidospermum,a.10.5,1000,1
 Crepidospermum rhoifolium,Crepidospermum,b.5.0,600,1
 Crepidospermum rhoifolium,Crepidospermum,c.0.-5,500,1
@@ -498,6 +504,7 @@ Croton lechleri,Croton,c.0.-5,2200,7
 Croton lechleri,Croton,d.-5.-10,1700,6
 Croton lechleri,Croton,e.-10.-15,2200,5
 Croton lechleri,Croton,f.-15.-20,1200,4
+Croton lechleri,Croton,g.-20.-25,200,1
 Croton mutisianus,Croton,a.10.5,1900,5
 Croton mutisianus,Croton,b.5.0,1700,7
 Croton mutisianus,Croton,c.0.-5,1300,7
@@ -653,6 +660,7 @@ Cynophalla flexuosa,Cynophalla,c.0.-5,900,1
 Cynophalla flexuosa,Cynophalla,d.-5.-10,800,1
 Cynophalla flexuosa,Cynophalla,e.-10.-15,200,1
 Cynophalla flexuosa,Cynophalla,f.-15.-20,1300,1
+Cynophalla flexuosa,Cynophalla,g.-20.-25,500,1
 Dacryodes belemensis,Dacryodes,f.-15.-20,300,1
 Dacryodes peruviana,Dacryodes,a.10.5,300,1
 Dacryodes peruviana,Dacryodes,b.5.0,300,2
@@ -809,6 +817,7 @@ Entada gigas,Entada,a.10.5,1100,1
 Entada gigas,Entada,c.0.-5,200,1
 Enterolobium cyclocarpum,Enterolobium,a.10.5,800,2
 Enterolobium cyclocarpum,Enterolobium,b.5.0,700,2
+Enterolobium cyclocarpum,Enterolobium,g.-20.-25,300,2
 Enterolobium schomburgkii,Enterolobium,a.10.5,300,2
 Enterolobium schomburgkii,Enterolobium,b.5.0,600,2
 Enterolobium schomburgkii,Enterolobium,e.-10.-15,700,2
@@ -907,12 +916,14 @@ Eugenia florida,Eugenia,c.0.-5,2300,7
 Eugenia florida,Eugenia,d.-5.-10,1900,6
 Eugenia florida,Eugenia,e.-10.-15,2100,8
 Eugenia florida,Eugenia,f.-15.-20,1900,7
+Eugenia florida,Eugenia,g.-20.-25,500,3
 Eugenia limbosa,Eugenia,e.-10.-15,700,8
 Eugenia limbosa,Eugenia,f.-15.-20,700,7
 Eugenia oerstediana,Eugenia,a.10.5,1100,7
 Eugenia uniflora,Eugenia,a.10.5,100,7
 Eugenia uniflora,Eugenia,e.-10.-15,1400,8
 Eugenia uniflora,Eugenia,f.-15.-20,2100,7
+Eugenia uniflora,Eugenia,g.-20.-25,1300,3
 Euphorbia arenaria,Euphorbia,a.10.5,1000,1
 Euphorbia arenaria,Euphorbia,b.5.0,600,1
 Euterpe precatoria,Euterpe,a.10.5,1700,1
@@ -979,6 +990,7 @@ Ficus citrifolia,Ficus,c.0.-5,2100,27
 Ficus citrifolia,Ficus,d.-5.-10,2000,22
 Ficus citrifolia,Ficus,e.-10.-15,2300,29
 Ficus citrifolia,Ficus,f.-15.-20,1100,19
+Ficus citrifolia,Ficus,g.-20.-25,600,3
 Ficus crassiuscula,Ficus,a.10.5,400,26
 Ficus crassiuscula,Ficus,b.5.0,100,29
 Ficus crassiuscula,Ficus,e.-10.-15,400,29
@@ -993,6 +1005,7 @@ Ficus cuatrecasasiana,Ficus,c.0.-5,2000,27
 Ficus cuatrecasasiana,Ficus,d.-5.-10,1500,22
 Ficus cuatrecasasiana,Ficus,e.-10.-15,2000,29
 Ficus cuatrecasasiana,Ficus,f.-15.-20,1700,19
+Ficus cuatrecasasiana,Ficus,g.-20.-25,300,3
 Ficus donnell-smithii,Ficus,a.10.5,3400,26
 Ficus donnell-smithii,Ficus,c.0.-5,600,27
 Ficus donnell-smithii,Ficus,d.-5.-10,300,22
@@ -1165,6 +1178,7 @@ Alsophila incana,Alsophila,b.5.0,600,4
 Alsophila incana,Alsophila,d.-5.-10,600,3
 Alsophila incana,Alsophila,e.-10.-15,1400,5
 Alsophila incana,Alsophila,f.-15.-20,1400,3
+Alsophila incana,Alsophila,g.-20.-25,800,1
 Alzatea verticillata,Alzatea,a.10.5,300,1
 Alzatea verticillata,Alzatea,b.5.0,500,1
 Alzatea verticillata,Alzatea,c.0.-5,1000,1
@@ -1479,11 +1493,13 @@ Handroanthus chrysanthus,Handroanthus,e.-10.-15,800,4
 Handroanthus impetiginosus,Handroanthus,d.-5.-10,200,4
 Handroanthus impetiginosus,Handroanthus,e.-10.-15,1000,4
 Handroanthus impetiginosus,Handroanthus,f.-15.-20,1600,3
+Handroanthus impetiginosus,Handroanthus,g.-20.-25,1000,2
 Handroanthus ochraceus,Handroanthus,a.10.5,1200,3
 Handroanthus ochraceus,Handroanthus,b.5.0,1300,3
 Handroanthus ochraceus,Handroanthus,d.-5.-10,1300,4
 Handroanthus ochraceus,Handroanthus,e.-10.-15,1300,4
 Handroanthus ochraceus,Handroanthus,f.-15.-20,1100,3
+Handroanthus ochraceus,Handroanthus,g.-20.-25,600,2
 Handroanthus serratifolius,Handroanthus,a.10.5,200,3
 Handroanthus serratifolius,Handroanthus,d.-5.-10,700,4
 Handroanthus serratifolius,Handroanthus,e.-10.-15,1100,4
@@ -1579,6 +1595,7 @@ Heliocarpus americanus,Heliocarpus,c.0.-5,2100,1
 Heliocarpus americanus,Heliocarpus,d.-5.-10,2100,1
 Heliocarpus americanus,Heliocarpus,e.-10.-15,2500,1
 Heliocarpus americanus,Heliocarpus,f.-15.-20,1900,1
+Heliocarpus americanus,Heliocarpus,g.-20.-25,400,1
 Henriettea fissanthera,Henriettea,a.10.5,500,2
 Henriettea trachyphylla,Henriettea,a.10.5,1200,2
 Henriettea trachyphylla,Henriettea,b.5.0,1300,2
@@ -1798,6 +1815,7 @@ Inga edulis,Inga,c.0.-5,1500,40
 Inga edulis,Inga,d.-5.-10,1500,24
 Inga edulis,Inga,e.-10.-15,1700,38
 Inga edulis,Inga,f.-15.-20,1000,24
+Inga edulis,Inga,g.-20.-25,400,2
 Inga heterophylla,Inga,a.10.5,1400,33
 Inga heterophylla,Inga,b.5.0,200,36
 Inga heterophylla,Inga,c.0.-5,700,40
@@ -1826,6 +1844,7 @@ Inga marginata,Inga,c.0.-5,2300,40
 Inga marginata,Inga,d.-5.-10,2200,24
 Inga marginata,Inga,e.-10.-15,2500,38
 Inga marginata,Inga,f.-15.-20,1900,24
+Inga marginata,Inga,g.-20.-25,1400,2
 Inga mucuna,Inga,a.10.5,800,33
 Inga multijuga,Inga,a.10.5,800,33
 Inga multijuga,Inga,b.5.0,1700,36
@@ -1954,6 +1973,7 @@ Jacaranda mimosifolia,Jacaranda,a.10.5,100,5
 Jacaranda mimosifolia,Jacaranda,c.0.-5,1400,3
 Jacaranda mimosifolia,Jacaranda,e.-10.-15,1200,4
 Jacaranda mimosifolia,Jacaranda,f.-15.-20,1800,3
+Jacaranda mimosifolia,Jacaranda,g.-20.-25,1500,1
 Jacaranda obtusifolia,Jacaranda,a.10.5,500,5
 Jacaranda obtusifolia,Jacaranda,b.5.0,600,5
 Jacaranda obtusifolia,Jacaranda,e.-10.-15,100,4
@@ -2124,6 +2144,7 @@ Maclura tinctoria,Maclura,c.0.-5,1300,1
 Maclura tinctoria,Maclura,d.-5.-10,1500,1
 Maclura tinctoria,Maclura,e.-10.-15,3600,1
 Maclura tinctoria,Maclura,f.-15.-20,1300,1
+Maclura tinctoria,Maclura,g.-20.-25,1600,1
 Macrocarpaea glabra,Macrocarpaea,a.10.5,1900,2
 Macrocarpaea glabra,Macrocarpaea,b.5.0,1400,2
 Macrocarpaea macrophylla,Macrocarpaea,a.10.5,2000,2
@@ -2431,6 +2452,7 @@ Miconia calvescens,Miconia,c.0.-5,2000,52
 Miconia calvescens,Miconia,d.-5.-10,1700,37
 Miconia calvescens,Miconia,e.-10.-15,2400,62
 Miconia calvescens,Miconia,f.-15.-20,1800,35
+Miconia calvescens,Miconia,g.-20.-25,900,1
 Miconia caudata,Miconia,a.10.5,1600,64
 Miconia caudata,Miconia,b.5.0,1900,65
 Miconia centrodesma,Miconia,a.10.5,1200,64
@@ -2673,6 +2695,7 @@ Morella pubescens,Morella,c.0.-5,2900,2
 Morella pubescens,Morella,d.-5.-10,3300,2
 Morella pubescens,Morella,e.-10.-15,2200,1
 Morella pubescens,Morella,f.-15.-20,3100,1
+Morella pubescens,Morella,g.-20.-25,1100,1
 Morisonia americana,Morisonia,a.10.5,1100,2
 Morisonia oblongifolia,Morisonia,a.10.5,1000,2
 Morisonia oblongifolia,Morisonia,e.-10.-15,100,1
@@ -2688,6 +2711,7 @@ Muntingia calabura,Muntingia,c.0.-5,1400,1
 Muntingia calabura,Muntingia,d.-5.-10,1400,1
 Muntingia calabura,Muntingia,e.-10.-15,1800,1
 Muntingia calabura,Muntingia,f.-15.-20,1400,1
+Muntingia calabura,Muntingia,g.-20.-25,300,1
 Myrcia paivae,Myrcia,a.10.5,1900,5
 Myrcia paivae,Myrcia,b.5.0,3400,6
 Myrcia paivae,Myrcia,c.0.-5,2100,5
@@ -2733,6 +2757,7 @@ Myriocarpa stipitata,Myriocarpa,c.0.-5,1700,1
 Myriocarpa stipitata,Myriocarpa,d.-5.-10,2300,2
 Myriocarpa stipitata,Myriocarpa,e.-10.-15,2600,2
 Myriocarpa stipitata,Myriocarpa,f.-15.-20,1700,1
+Myriocarpa stipitata,Myriocarpa,g.-20.-25,400,1
 Myroxylon balsamum,Myroxylon,a.10.5,1300,1
 Myroxylon balsamum,Myroxylon,b.5.0,400,1
 Myroxylon balsamum,Myroxylon,c.0.-5,1500,1
@@ -2935,6 +2960,7 @@ Ocotea puberula,Ocotea,c.0.-5,1800,22
 Ocotea puberula,Ocotea,d.-5.-10,1300,19
 Ocotea puberula,Ocotea,e.-10.-15,2800,23
 Ocotea puberula,Ocotea,f.-15.-20,2800,11
+Ocotea puberula,Ocotea,g.-20.-25,500,2
 Ocotea sericea,Ocotea,a.10.5,2200,16
 Ocotea sericea,Ocotea,b.5.0,1200,20
 Ocotea sericea,Ocotea,c.0.-5,100,22
@@ -3175,6 +3201,7 @@ Persea americana,Persea,c.0.-5,2900,14
 Persea americana,Persea,d.-5.-10,1200,8
 Persea americana,Persea,e.-10.-15,3300,11
 Persea americana,Persea,f.-15.-20,2900,6
+Persea americana,Persea,g.-20.-25,500,1
 Persea areolatocostae,Persea,a.10.5,700,8
 Persea areolatocostae,Persea,b.5.0,1800,9
 Persea areolatocostae,Persea,c.0.-5,1700,14
@@ -3225,6 +3252,7 @@ Phyllanthus acuminatus,Phyllanthus,b.5.0,800,3
 Phyllanthus acuminatus,Phyllanthus,d.-5.-10,1100,2
 Phyllanthus acuminatus,Phyllanthus,e.-10.-15,1200,2
 Phyllanthus acuminatus,Phyllanthus,f.-15.-20,1200,2
+Phyllanthus acuminatus,Phyllanthus,g.-20.-25,1500,1
 Phyllanthus attenuatus,Phyllanthus,a.10.5,1000,2
 Phyllanthus attenuatus,Phyllanthus,b.5.0,1700,3
 Phyllanthus attenuatus,Phyllanthus,c.0.-5,1600,2
@@ -3260,6 +3288,7 @@ Baccharis latifolia,Baccharis,c.0.-5,3200,3
 Baccharis latifolia,Baccharis,d.-5.-10,2300,3
 Baccharis latifolia,Baccharis,e.-10.-15,2800,3
 Baccharis latifolia,Baccharis,f.-15.-20,3500,3
+Baccharis latifolia,Baccharis,g.-20.-25,700,1
 Baccharis oblongifolia,Baccharis,a.10.5,1800,3
 Baccharis oblongifolia,Baccharis,b.5.0,1800,3
 Baccharis oblongifolia,Baccharis,c.0.-5,1100,3
@@ -3320,6 +3349,7 @@ Bejaria aestuans,Bejaria,c.0.-5,2100,2
 Bejaria aestuans,Bejaria,d.-5.-10,3300,2
 Bejaria aestuans,Bejaria,e.-10.-15,2800,1
 Bejaria aestuans,Bejaria,f.-15.-20,2400,1
+Bejaria aestuans,Bejaria,g.-20.-25,900,1
 Bejaria resinosa,Bejaria,a.10.5,2000,2
 Bejaria resinosa,Bejaria,b.5.0,1700,2
 Bejaria resinosa,Bejaria,c.0.-5,1900,2
@@ -3354,12 +3384,14 @@ Piper aduncum,Piper,c.0.-5,3000,22
 Piper aduncum,Piper,d.-5.-10,2900,16
 Piper aduncum,Piper,e.-10.-15,2200,11
 Piper aduncum,Piper,f.-15.-20,2600,8
+Piper aduncum,Piper,g.-20.-25,1000,3
 Piper amalago,Piper,a.10.5,900,24
 Piper amalago,Piper,b.5.0,300,22
 Piper amalago,Piper,c.0.-5,300,22
 Piper amalago,Piper,d.-5.-10,2200,16
 Piper amalago,Piper,e.-10.-15,1400,11
 Piper amalago,Piper,f.-15.-20,1700,8
+Piper amalago,Piper,g.-20.-25,1300,3
 Piper arboreum,Piper,a.10.5,1600,24
 Piper arboreum,Piper,b.5.0,1400,22
 Piper arboreum,Piper,c.0.-5,2100,22
@@ -3679,6 +3711,7 @@ Prunus integrifolia,Prunus,b.5.0,1300,6
 Prunus integrifolia,Prunus,d.-5.-10,400,3
 Prunus integrifolia,Prunus,e.-10.-15,2000,6
 Prunus integrifolia,Prunus,f.-15.-20,2200,3
+Prunus integrifolia,Prunus,g.-20.-25,400,1
 Prunus opaca,Prunus,a.10.5,1400,3
 Prunus opaca,Prunus,b.5.0,1100,6
 Prunus opaca,Prunus,c.0.-5,1200,5
@@ -3721,6 +3754,7 @@ Psidium guineense,Psidium,c.0.-5,1600,1
 Psidium guineense,Psidium,d.-5.-10,1800,1
 Psidium guineense,Psidium,e.-10.-15,1900,1
 Psidium guineense,Psidium,f.-15.-20,2200,1
+Psidium guineense,Psidium,g.-20.-25,800,1
 Psychotria biaristata,Psychotria,a.10.5,300,11
 Psychotria brachiata,Psychotria,a.10.5,1200,11
 Psychotria brachiata,Psychotria,c.0.-5,1000,9
@@ -3789,6 +3823,7 @@ Randia armata,Randia,c.0.-5,2100,1
 Randia armata,Randia,d.-5.-10,700,1
 Randia armata,Randia,e.-10.-15,3200,1
 Randia armata,Randia,f.-15.-20,2100,2
+Randia armata,Randia,g.-20.-25,800,2
 Randia hondensis,Randia,a.10.5,700,2
 Rauvolfia leptophylla,Rauvolfia,a.10.5,2100,1
 Rauvolfia leptophylla,Rauvolfia,b.5.0,600,1
@@ -3865,6 +3900,7 @@ Roupala montana,Roupala,c.0.-5,2100,3
 Roupala montana,Roupala,d.-5.-10,1300,3
 Roupala montana,Roupala,e.-10.-15,2200,3
 Roupala montana,Roupala,f.-15.-20,1700,2
+Roupala montana,Roupala,g.-20.-25,600,1
 Ruagea glabra,Ruagea,a.10.5,1900,3
 Ruagea glabra,Ruagea,b.5.0,2700,4
 Ruagea glabra,Ruagea,c.0.-5,2400,4
@@ -3914,6 +3950,7 @@ Sapium glandulosum,Sapium,c.0.-5,1900,4
 Sapium glandulosum,Sapium,d.-5.-10,2000,4
 Sapium glandulosum,Sapium,e.-10.-15,2400,3
 Sapium glandulosum,Sapium,f.-15.-20,2500,2
+Sapium glandulosum,Sapium,g.-20.-25,2300,1
 Sapium laurifolium,Sapium,a.10.5,1200,3
 Sapium laurifolium,Sapium,b.5.0,1700,4
 Sapium laurifolium,Sapium,c.0.-5,1400,4
@@ -3982,6 +4019,7 @@ Senegalia riparia,Senegalia,c.0.-5,200,2
 Senegalia riparia,Senegalia,d.-5.-10,1300,2
 Senegalia riparia,Senegalia,e.-10.-15,2900,2
 Senegalia riparia,Senegalia,f.-15.-20,1700,2
+Senegalia riparia,Senegalia,g.-20.-25,400,1
 Senna bacillaris,Senna,a.10.5,1200,3
 Senna bacillaris,Senna,b.5.0,1500,3
 Senna bacillaris,Senna,c.0.-5,1200,4
@@ -4000,9 +4038,11 @@ Senna spectabilis,Senna,b.5.0,1200,3
 Senna spectabilis,Senna,c.0.-5,500,4
 Senna spectabilis,Senna,e.-10.-15,2800,4
 Senna spectabilis,Senna,f.-15.-20,1900,3
+Senna spectabilis,Senna,g.-20.-25,1300,1
 Sideroxylon obtusifolium,Sideroxylon,d.-5.-10,1200,1
 Sideroxylon obtusifolium,Sideroxylon,e.-10.-15,1000,1
 Sideroxylon obtusifolium,Sideroxylon,f.-15.-20,1900,1
+Sideroxylon obtusifolium,Sideroxylon,g.-20.-25,100,1
 Simarouba amara,Simarouba,a.10.5,1700,1
 Simarouba amara,Simarouba,b.5.0,1300,1
 Simarouba amara,Simarouba,c.0.-5,1500,1
@@ -4071,6 +4111,7 @@ Sisyrinchium micranthum,Sisyrinchium,c.0.-5,2100,1
 Sisyrinchium micranthum,Sisyrinchium,d.-5.-10,300,1
 Sisyrinchium micranthum,Sisyrinchium,e.-10.-15,1000,1
 Sisyrinchium micranthum,Sisyrinchium,f.-15.-20,2100,1
+Sisyrinchium micranthum,Sisyrinchium,g.-20.-25,1800,1
 Sloanea brevispina,Sloanea,a.10.5,1200,8
 Sloanea brevispina,Sloanea,b.5.0,1200,7
 Sloanea durissima,Sloanea,a.10.5,800,8
@@ -4157,6 +4198,7 @@ Solanum nutans,Solanum,c.0.-5,2100,15
 Solanum nutans,Solanum,d.-5.-10,2000,13
 Solanum nutans,Solanum,e.-10.-15,2800,11
 Solanum nutans,Solanum,f.-15.-20,1800,9
+Solanum nutans,Solanum,g.-20.-25,400,6
 Solanum oblongifolium,Solanum,a.10.5,1300,9
 Solanum oblongifolium,Solanum,b.5.0,1400,12
 Solanum oblongifolium,Solanum,c.0.-5,2100,15
@@ -4230,12 +4272,14 @@ Bocconia integrifolia,Bocconia,c.0.-5,2500,2
 Bocconia integrifolia,Bocconia,d.-5.-10,1700,2
 Bocconia integrifolia,Bocconia,e.-10.-15,2100,2
 Bocconia integrifolia,Bocconia,f.-15.-20,2600,2
+Bocconia integrifolia,Bocconia,g.-20.-25,1200,1
 Boehmeria caudata,Boehmeria,a.10.5,2700,1
 Boehmeria caudata,Boehmeria,b.5.0,2500,2
 Boehmeria caudata,Boehmeria,c.0.-5,1600,2
 Boehmeria caudata,Boehmeria,d.-5.-10,900,2
 Boehmeria caudata,Boehmeria,e.-10.-15,2700,2
 Boehmeria caudata,Boehmeria,f.-15.-20,2100,2
+Boehmeria caudata,Boehmeria,g.-20.-25,1400,1
 Boehmeria ulmifolia,Boehmeria,b.5.0,1800,2
 Boehmeria ulmifolia,Boehmeria,c.0.-5,2400,2
 Boehmeria ulmifolia,Boehmeria,d.-5.-10,1300,2
@@ -4447,6 +4491,7 @@ Tessaria integrifolia,Tessaria,c.0.-5,2100,1
 Tessaria integrifolia,Tessaria,d.-5.-10,2700,1
 Tessaria integrifolia,Tessaria,e.-10.-15,2300,1
 Tessaria integrifolia,Tessaria,f.-15.-20,2200,1
+Tessaria integrifolia,Tessaria,g.-20.-25,1100,1
 Tetragastris altissima,Tetragastris,a.10.5,200,2
 Tetragastris altissima,Tetragastris,b.5.0,400,2
 Tetragastris altissima,Tetragastris,d.-5.-10,200,2
@@ -4525,6 +4570,7 @@ Trema micrantha,Trema,c.0.-5,2100,2
 Trema micrantha,Trema,d.-5.-10,2200,1
 Trema micrantha,Trema,e.-10.-15,2800,1
 Trema micrantha,Trema,f.-15.-20,2200,1
+Trema micrantha,Trema,g.-20.-25,2800,1
 Trichilia elegans,Trichilia,a.10.5,1200,11
 Trichilia elegans,Trichilia,b.5.0,700,13
 Trichilia elegans,Trichilia,c.0.-5,800,14
@@ -4620,6 +4666,7 @@ Urera baccifera,Urera,c.0.-5,2100,4
 Urera baccifera,Urera,d.-5.-10,2000,3
 Urera baccifera,Urera,e.-10.-15,2500,4
 Urera baccifera,Urera,f.-15.-20,1700,4
+Urera baccifera,Urera,g.-20.-25,1500,3
 Urera caracasana,Urera,a.10.5,1700,3
 Urera caracasana,Urera,b.5.0,1900,3
 Urera caracasana,Urera,c.0.-5,1900,4
@@ -4632,6 +4679,7 @@ Urera simplex,Urera,c.0.-5,800,4
 Urera simplex,Urera,d.-5.-10,2600,3
 Urera simplex,Urera,e.-10.-15,1800,4
 Urera simplex,Urera,f.-15.-20,1900,4
+Urera simplex,Urera,g.-20.-25,1100,3
 Uribea tamarindoides,Uribea,a.10.5,100,1
 Vachellia macracantha,Vachellia,a.10.5,800,1
 Vachellia macracantha,Vachellia,b.5.0,1900,1
@@ -4639,12 +4687,14 @@ Vachellia macracantha,Vachellia,c.0.-5,1600,1
 Vachellia macracantha,Vachellia,d.-5.-10,2200,1
 Vachellia macracantha,Vachellia,e.-10.-15,1300,1
 Vachellia macracantha,Vachellia,f.-15.-20,2800,1
+Vachellia macracantha,Vachellia,g.-20.-25,1900,1
 Vallea stipularis,Vallea,a.10.5,2400,1
 Vallea stipularis,Vallea,b.5.0,2400,1
 Vallea stipularis,Vallea,c.0.-5,2200,2
 Vallea stipularis,Vallea,d.-5.-10,2400,1
 Vallea stipularis,Vallea,e.-10.-15,2100,2
 Vallea stipularis,Vallea,f.-15.-20,3700,1
+Vallea stipularis,Vallea,g.-20.-25,500,1
 Varronia cylindrostachya,Varronia,a.10.5,2300,1
 Varronia cylindrostachya,Varronia,b.5.0,2800,1
 Varronia cylindrostachya,Varronia,c.0.-5,2400,1
@@ -4884,6 +4934,7 @@ Zanthoxylum fagara,Zanthoxylum,c.0.-5,1300,8
 Zanthoxylum fagara,Zanthoxylum,d.-5.-10,2500,7
 Zanthoxylum fagara,Zanthoxylum,e.-10.-15,1700,6
 Zanthoxylum fagara,Zanthoxylum,f.-15.-20,2000,7
+Zanthoxylum fagara,Zanthoxylum,g.-20.-25,1100,4
 Zanthoxylum formiciferum,Zanthoxylum,c.0.-5,200,8
 Zanthoxylum lenticulare,Zanthoxylum,a.10.5,1100,6
 Zanthoxylum melanostictum,Zanthoxylum,a.10.5,900,6
@@ -4899,9 +4950,11 @@ Zanthoxylum rhoifolium,Zanthoxylum,c.0.-5,1000,8
 Zanthoxylum rhoifolium,Zanthoxylum,d.-5.-10,800,7
 Zanthoxylum rhoifolium,Zanthoxylum,e.-10.-15,1400,6
 Zanthoxylum rhoifolium,Zanthoxylum,f.-15.-20,2800,7
+Zanthoxylum rhoifolium,Zanthoxylum,g.-20.-25,1700,4
 Zanthoxylum rigidum,Zanthoxylum,a.10.5,1300,6
 Zanthoxylum rigidum,Zanthoxylum,b.5.0,2300,4
 Zanthoxylum rigidum,Zanthoxylum,d.-5.-10,400,7
+Zanthoxylum rigidum,Zanthoxylum,g.-20.-25,500,4
 Zinowiewia australis,Zinowiewia,c.0.-5,1600,1
 Zinowiewia australis,Zinowiewia,e.-10.-15,2300,1
 Zinowiewia australis,Zinowiewia,f.-15.-20,1000,1
@@ -5018,6 +5071,7 @@ Casearia sylvestris,Casearia,c.0.-5,1700,14
 Casearia sylvestris,Casearia,d.-5.-10,2200,12
 Casearia sylvestris,Casearia,e.-10.-15,3000,10
 Casearia sylvestris,Casearia,f.-15.-20,2700,6
+Casearia sylvestris,Casearia,g.-20.-25,1100,1
 Casearia ulmifolia,Casearia,a.10.5,400,12
 Casearia ulmifolia,Casearia,b.5.0,400,13
 Casearia ulmifolia,Casearia,c.0.-5,900,14
@@ -5092,7 +5146,9 @@ Cedrela fissilis,Cedrela,c.0.-5,400,3
 Cedrela fissilis,Cedrela,d.-5.-10,500,3
 Cedrela fissilis,Cedrela,e.-10.-15,3100,3
 Cedrela fissilis,Cedrela,f.-15.-20,2100,3
+Cedrela fissilis,Cedrela,g.-20.-25,1500,4
 Cedrela lilloi,Cedrela,f.-15.-20,1500,3
+Cedrela lilloi,Cedrela,g.-20.-25,600,4
 Cedrela montana,Cedrela,a.10.5,2300,2
 Cedrela montana,Cedrela,b.5.0,1200,2
 Cedrela montana,Cedrela,c.0.-5,1500,3
@@ -5104,6 +5160,7 @@ Cedrela odorata,Cedrela,c.0.-5,2600,3
 Cedrela odorata,Cedrela,d.-5.-10,2700,3
 Cedrela odorata,Cedrela,e.-10.-15,3400,3
 Cedrela odorata,Cedrela,f.-15.-20,2700,3
+Cedrela odorata,Cedrela,g.-20.-25,1100,4
 Ceiba pentandra,Ceiba,a.10.5,1300,2
 Ceiba pentandra,Ceiba,b.5.0,900,1
 Ceiba pentandra,Ceiba,c.0.-5,1800,5
@@ -5119,6 +5176,7 @@ Celtis iguanaea,Celtis,c.0.-5,1500,3
 Celtis iguanaea,Celtis,d.-5.-10,1600,3
 Celtis iguanaea,Celtis,e.-10.-15,2000,3
 Celtis iguanaea,Celtis,f.-15.-20,2000,2
+Celtis iguanaea,Celtis,g.-20.-25,1100,1
 Centronia laurifolia,Centronia,c.0.-5,1500,1
 Centronia laurifolia,Centronia,d.-5.-10,1300,1
 Ceroxylon quindiuense,Ceroxylon,a.10.5,300,2
@@ -5797,6 +5855,7 @@ Psychotria montivaga,Psychotria,c.0.-5,1200,9
 Psychotria montivaga,Psychotria,d.-5.-10,2100,5
 Psychotria montivaga,Psychotria,e.-10.-15,100,6
 Pterogyne nitens,Pterogyne,f.-15.-20,1200,1
+Pterogyne nitens,Pterogyne,g.-20.-25,1600,1
 Purdiaea nutans,Purdiaea,b.5.0,400,1
 Purdiaea nutans,Purdiaea,c.0.-5,1700,1
 Purdiaea nutans,Purdiaea,d.-5.-10,1800,1
@@ -5830,6 +5889,7 @@ Sambucus peruviana,Sambucus,c.0.-5,900,2
 Sambucus peruviana,Sambucus,d.-5.-10,2900,1
 Sambucus peruviana,Sambucus,e.-10.-15,2900,1
 Sambucus peruviana,Sambucus,f.-15.-20,2400,2
+Sambucus peruviana,Sambucus,g.-20.-25,2000,1
 Saracha punctata,Saracha,c.0.-5,1000,1
 Saracha punctata,Saracha,d.-5.-10,1200,1
 Saracha punctata,Saracha,e.-10.-15,2500,1
@@ -5864,6 +5924,7 @@ Solanum sessile,Solanum,c.0.-5,1600,15
 Solanum sessile,Solanum,d.-5.-10,2400,13
 Solanum sessile,Solanum,e.-10.-15,2800,11
 Solanum sessile,Solanum,f.-15.-20,1800,9
+Solanum sessile,Solanum,g.-20.-25,600,6
 Sorocea jaramilloi,Sorocea,b.5.0,900,5
 Sorocea sarcocarpa,Sorocea,c.0.-5,1900,4
 Spirotheca awadendron,Spirotheca,b.5.0,900,2
@@ -6043,11 +6104,13 @@ Acalypha stricta,Acalypha,c.0.-5,900,5
 Acalypha stricta,Acalypha,d.-5.-10,1700,5
 Acalypha stricta,Acalypha,e.-10.-15,1800,5
 Acalypha stricta,Acalypha,f.-15.-20,2200,5
+Acalypha stricta,Acalypha,g.-20.-25,300,2
 Achatocarpus pubescens,Achatocarpus,c.0.-5,200,1
 Agonandra excelsa,Agonandra,c.0.-5,1100,3
 Agonandra excelsa,Agonandra,d.-5.-10,1400,2
 Agonandra excelsa,Agonandra,e.-10.-15,400,3
 Agonandra excelsa,Agonandra,f.-15.-20,1400,1
+Agonandra excelsa,Agonandra,g.-20.-25,900,1
 Agonandra peruviana,Agonandra,c.0.-5,600,3
 Agonandra peruviana,Agonandra,e.-10.-15,1300,3
 Agonandra silvatica,Agonandra,c.0.-5,500,3
@@ -6081,6 +6144,7 @@ Clethra pedicellaris,Clethra,e.-10.-15,2400,7
 Clethra pedicellaris,Clethra,f.-15.-20,500,7
 Clethra scabra,Clethra,e.-10.-15,2000,7
 Clethra scabra,Clethra,f.-15.-20,2400,7
+Clethra scabra,Clethra,g.-20.-25,2000,1
 Coccoloba peruviana,Coccoloba,c.0.-5,600,6
 Coccoloba peruviana,Coccoloba,d.-5.-10,300,5
 Coccoloba peruviana,Coccoloba,e.-10.-15,1000,4
@@ -6131,14 +6195,17 @@ Ficus maroma,Ficus,c.0.-5,400,27
 Ficus maroma,Ficus,d.-5.-10,800,22
 Ficus maroma,Ficus,e.-10.-15,1100,29
 Ficus maroma,Ficus,f.-15.-20,800,19
+Ficus maroma,Ficus,g.-20.-25,300,3
 Anadenanthera colubrina,Anadenanthera,c.0.-5,1300,2
 Anadenanthera colubrina,Anadenanthera,d.-5.-10,2000,2
 Anadenanthera colubrina,Anadenanthera,e.-10.-15,2200,2
 Anadenanthera colubrina,Anadenanthera,f.-15.-20,2100,2
+Anadenanthera colubrina,Anadenanthera,g.-20.-25,1700,2
 Anadenanthera columbrina,Anadenanthera,c.0.-5,1300,2
 Anadenanthera columbrina,Anadenanthera,d.-5.-10,2000,2
 Anadenanthera columbrina,Anadenanthera,e.-10.-15,2200,2
 Anadenanthera columbrina,Anadenanthera,f.-15.-20,2100,2
+Anadenanthera columbrina,Anadenanthera,g.-20.-25,1700,2
 Andira multistipula,Andira,c.0.-5,400,2
 Andira multistipula,Andira,d.-5.-10,500,3
 Andira multistipula,Andira,e.-10.-15,900,2
@@ -6259,6 +6326,7 @@ Myriocarpa laevigata,Myriocarpa,d.-5.-10,1200,2
 Myriocarpa laevigata,Myriocarpa,e.-10.-15,1900,2
 Myroxylon peruiferum,Myroxylon,e.-10.-15,600,2
 Myroxylon peruiferum,Myroxylon,f.-15.-20,1000,2
+Myroxylon peruiferum,Myroxylon,g.-20.-25,1000,1
 Naucleopsis concinna,Naucleopsis,d.-5.-10,100,3
 Naucleopsis concinna,Naucleopsis,e.-10.-15,100,4
 Nectandra discolor,Nectandra,d.-5.-10,1400,14
@@ -6359,6 +6427,7 @@ Rhamnidium elaeocarpum,Rhamnidium,c.0.-5,100,1
 Rhamnidium elaeocarpum,Rhamnidium,d.-5.-10,200,1
 Rhamnidium elaeocarpum,Rhamnidium,e.-10.-15,1000,1
 Rhamnidium elaeocarpum,Rhamnidium,f.-15.-20,1500,1
+Rhamnidium elaeocarpum,Rhamnidium,g.-20.-25,1000,1
 Rhodostemonodaphne cyclops,Rhodostemonodaphne,c.0.-5,200,3
 Roupala cordifolia,Roupala,c.0.-5,700,3
 Roupala cordifolia,Roupala,d.-5.-10,400,3
@@ -6404,6 +6473,7 @@ Solanum maturecalvans,Solanum,c.0.-5,1000,15
 Solanum maturecalvans,Solanum,d.-5.-10,2100,13
 Solanum maturecalvans,Solanum,e.-10.-15,2800,11
 Solanum maturecalvans,Solanum,f.-15.-20,2000,9
+Solanum maturecalvans,Solanum,g.-20.-25,200,6
 Solanum pendulum,Solanum,c.0.-5,800,15
 Solanum pendulum,Solanum,d.-5.-10,2000,13
 Solanum pendulum,Solanum,e.-10.-15,2200,11
@@ -6411,6 +6481,7 @@ Solanum riparium,Solanum,c.0.-5,100,15
 Solanum riparium,Solanum,d.-5.-10,2100,13
 Solanum riparium,Solanum,e.-10.-15,2300,11
 Solanum riparium,Solanum,f.-15.-20,2200,9
+Solanum riparium,Solanum,g.-20.-25,1600,6
 Brachyotum gleasonii,Brachyotum,c.0.-5,500,1
 Brunellia inermis,Brunellia,c.0.-5,1200,5
 Brunellia inermis,Brunellia,d.-5.-10,200,3
@@ -6463,9 +6534,11 @@ Triplaris weigeltiana,Triplaris,d.-5.-10,1000,4
 Urera lianoides,Urera,c.0.-5,400,4
 Urera lianoides,Urera,e.-10.-15,1800,4
 Urera lianoides,Urera,f.-15.-20,1500,4
+Urera lianoides,Urera,g.-20.-25,100,3
 Vasconcellea quercifolia,Vasconcellea,d.-5.-10,900,2
 Vasconcellea quercifolia,Vasconcellea,e.-10.-15,700,2
 Vasconcellea quercifolia,Vasconcellea,f.-15.-20,1900,2
+Vasconcellea quercifolia,Vasconcellea,g.-20.-25,2800,1
 Verbesina latisquama,Verbesina,c.0.-5,300,3
 Virola mollissima,Virola,c.0.-5,100,9
 Virola mollissima,Virola,e.-10.-15,400,7
@@ -6511,6 +6584,7 @@ Cecropia polystachya,Cecropia,f.-15.-20,1500,4
 Ceiba insignis,Ceiba,c.0.-5,1200,5
 Ceiba insignis,Ceiba,d.-5.-10,1500,3
 Ceiba insignis,Ceiba,e.-10.-15,1000,4
+Ceiba insignis,Ceiba,g.-20.-25,900,2
 Ceiba samauma,Ceiba,c.0.-5,900,5
 Ceiba samauma,Ceiba,d.-5.-10,1500,3
 Ceiba samauma,Ceiba,e.-10.-15,2400,4
@@ -6535,8 +6609,10 @@ Chrysophyllum amazonicum,Chrysophyllum,e.-10.-15,900,7
 Achatocarpus praecox,Achatocarpus,d.-5.-10,1300,1
 Achatocarpus praecox,Achatocarpus,e.-10.-15,600,1
 Achatocarpus praecox,Achatocarpus,f.-15.-20,1800,2
+Achatocarpus praecox,Achatocarpus,g.-20.-25,900,1
 Actinostemon concolor,Actinostemon,e.-10.-15,500,1
 Aegiphila saltensis,Aegiphila,f.-15.-20,900,2
+Aegiphila saltensis,Aegiphila,g.-20.-25,1000,1
 Aiouea grandifolia,Aiouea,d.-5.-10,1300,1
 Aiouea grandifolia,Aiouea,e.-10.-15,1400,1
 Cinchona hirsuta,Cinchona,e.-10.-15,700,7
@@ -6549,6 +6625,7 @@ Condalia weberbaueri,Condalia,f.-15.-20,500,1
 Cordia iguaguana,Cordia,d.-5.-10,1300,7
 Cordia saccellia,Cordia,d.-5.-10,2100,7
 Cordia saccellia,Cordia,f.-15.-20,200,5
+Cordia saccellia,Cordia,g.-20.-25,1500,4
 Cyathea cystolepis,Cyathea,d.-5.-10,200,14
 Cyathea cystolepis,Cyathea,e.-10.-15,300,27
 Cyathea herzogii,Cyathea,e.-10.-15,900,27
@@ -6562,6 +6639,7 @@ Dendropanax williamsii,Dendropanax,e.-10.-15,1100,4
 Dendropanax williamsii,Dendropanax,f.-15.-20,1100,3
 Duranta serratifolia,Duranta,e.-10.-15,800,1
 Duranta serratifolia,Duranta,f.-15.-20,1800,1
+Duranta serratifolia,Duranta,g.-20.-25,1100,1
 Eriotheca discolor,Eriotheca,d.-5.-10,1500,1
 Eriotheca discolor,Eriotheca,e.-10.-15,300,3
 Erythroxylum shatona,Erythroxylum,d.-5.-10,400,5
@@ -6569,6 +6647,7 @@ Erythroxylum subracemosum,Erythroxylum,d.-5.-10,100,5
 Eugenia moraviana,Eugenia,d.-5.-10,500,6
 Eugenia moraviana,Eugenia,e.-10.-15,1100,8
 Eugenia moraviana,Eugenia,f.-15.-20,2200,7
+Eugenia moraviana,Eugenia,g.-20.-25,700,3
 Faramea candelabrum,Faramea,d.-5.-10,900,8
 Faramea candelabrum,Faramea,e.-10.-15,2600,9
 Faramea candelabrum,Faramea,f.-15.-20,1400,6
@@ -6580,6 +6659,7 @@ Gallesia integrifolia,Gallesia,e.-10.-15,1200,1
 Gallesia integrifolia,Gallesia,f.-15.-20,1300,1
 Amburana cearensis,Amburana,e.-10.-15,800,1
 Amburana cearensis,Amburana,f.-15.-20,900,1
+Amburana cearensis,Amburana,g.-20.-25,200,1
 Ampelocera ruizii,Ampelocera,d.-5.-10,800,2
 Ampelocera ruizii,Ampelocera,e.-10.-15,1600,2
 Ampelocera ruizii,Ampelocera,f.-15.-20,1300,1
@@ -6648,7 +6728,9 @@ Oreopanax iodophyllus,Oreopanax,d.-5.-10,100,2
 Ouratea tarapotensis,Ouratea,d.-5.-10,100,3
 Parapiptadenia excelsa,Parapiptadenia,e.-10.-15,500,1
 Parapiptadenia excelsa,Parapiptadenia,f.-15.-20,1900,1
+Parapiptadenia excelsa,Parapiptadenia,g.-20.-25,1100,1
 Parodiodendron marginivillosum,Parodiodendron,f.-15.-20,1000,1
+Parodiodendron marginivillosum,Parodiodendron,g.-20.-25,100,1
 Pereskia horrida,Pereskia,d.-5.-10,100,1
 Perrottetia gentryi,Perrottetia,e.-10.-15,1800,2
 Perrottetia gentryi,Perrottetia,f.-15.-20,1100,1
@@ -6660,6 +6742,7 @@ Physocalymma scaberrimum,Physocalymma,e.-10.-15,1600,1
 Physocalymma scaberrimum,Physocalymma,f.-15.-20,500,1
 Athyana weinmanniifolia,Athyana,d.-5.-10,600,1
 Athyana weinmanniifolia,Athyana,f.-15.-20,1200,1
+Athyana weinmanniifolia,Athyana,g.-20.-25,500,1
 Axinaea lanceolata,Axinaea,d.-5.-10,400,1
 Axinaea lanceolata,Axinaea,e.-10.-15,1000,4
 Axinaea lanceolata,Axinaea,f.-15.-20,1300,1
@@ -6681,6 +6764,7 @@ Ruagea subviridiflora,Ruagea,e.-10.-15,1600,6
 Ruagea subviridiflora,Ruagea,f.-15.-20,900,5
 Ruprechtia aperta,Ruprechtia,d.-5.-10,1400,1
 Ruprechtia laxiflora,Ruprechtia,e.-10.-15,500,2
+Ruprechtia laxiflora,Ruprechtia,g.-20.-25,800,2
 Saurauia biserrata,Saurauia,e.-10.-15,1400,2
 Schinopsis peruviana,Schinopsis,d.-5.-10,100,1
 Seguieria americana,Seguieria,d.-5.-10,500,1
@@ -6693,6 +6777,7 @@ Sloanea sinemariensis,Sloanea,e.-10.-15,700,15
 Solanum trichoneuron,Solanum,d.-5.-10,2200,13
 Solanum trichoneuron,Solanum,e.-10.-15,1900,11
 Solanum trichoneuron,Solanum,f.-15.-20,1200,9
+Solanum trichoneuron,Solanum,g.-20.-25,900,6
 Sorocea guilleminiana,Sorocea,d.-5.-10,700,5
 Sorocea guilleminiana,Sorocea,e.-10.-15,1700,4
 Sorocea guilleminiana,Sorocea,f.-15.-20,1400,3
@@ -6705,6 +6790,7 @@ Tachigali peruviana,Tachigali,e.-10.-15,700,4
 Talisia obovata,Talisia,d.-5.-10,300,4
 Tetrasida chachapoyensis,Tetrasida,d.-5.-10,700,1
 Tipuana tipu,Tipuana,f.-15.-20,2900,1
+Tipuana tipu,Tipuana,g.-20.-25,2200,1
 Toulicia reticulata,Toulicia,d.-5.-10,400,1
 Toulicia reticulata,Toulicia,e.-10.-15,700,1
 Trichilia inaequilatera,Trichilia,d.-5.-10,200,12
@@ -6742,11 +6828,13 @@ Cyathea catacampta,Cyathea,e.-10.-15,700,27
 Cyathea dintelmanii,Cyathea,e.-10.-15,800,27
 Cyathea dintelmanii,Cyathea,f.-15.-20,2400,15
 Diatenopteryx sorbifolia,Diatenopteryx,f.-15.-20,600,1
+Diatenopteryx sorbifolia,Diatenopteryx,g.-20.-25,700,1
 Diploon cuspidatum,Diploon,e.-10.-15,800,1
 Diploon cuspidatum,Diploon,f.-15.-20,100,1
 Endlicheria macrophylla,Endlicheria,e.-10.-15,500,9
 Enterolobium contortisiliquum,Enterolobium,e.-10.-15,100,2
 Enterolobium contortisiliquum,Enterolobium,f.-15.-20,2200,1
+Enterolobium contortisiliquum,Enterolobium,g.-20.-25,1400,2
 Freziera cyanocantha,Freziera,e.-10.-15,100,6
 Freziera dudleyi,Freziera,e.-10.-15,600,6
 Freziera dudleyi,Freziera,f.-15.-20,700,1
@@ -6759,6 +6847,7 @@ Guatteria cuscoensis,Guatteria,e.-10.-15,200,12
 Guatteria terminalis,Guatteria,e.-10.-15,400,12
 Hebanthe occidentalis,Hebanthe,e.-10.-15,1800,1
 Hebanthe occidentalis,Hebanthe,f.-15.-20,2100,1
+Hebanthe occidentalis,Hebanthe,g.-20.-25,1300,1
 Hedyosmum tepuiense,Hedyosmum,e.-10.-15,1500,14
 Heteropterys laurifolia,Heteropterys,e.-10.-15,1500,1
 Heteropterys laurifolia,Heteropterys,f.-15.-20,1100,1
@@ -6781,10 +6870,12 @@ Mauria denticulata,Mauria,e.-10.-15,700,3
 Meliosma glabrata,Meliosma,e.-10.-15,3100,9
 Meliosma glabrata,Meliosma,f.-15.-20,400,6
 Annona emarginata,Annona,e.-10.-15,700,12
+Annona emarginata,Annona,g.-20.-25,700,1
 Annona williamsii,Annona,e.-10.-15,600,12
 Annona williamsii,Annona,f.-15.-20,1300,6
 Aralia soratensis,Aralia,e.-10.-15,2300,1
 Aralia soratensis,Aralia,f.-15.-20,1300,1
+Aralia soratensis,Aralia,g.-20.-25,300,1
 Meliosma solomonii,Meliosma,e.-10.-15,800,9
 Meliosma solomonii,Meliosma,f.-15.-20,2300,6
 Metrodorea flavida,Metrodorea,e.-10.-15,1100,1
@@ -6808,10 +6899,13 @@ Monnina connectisepala,Monnina,e.-10.-15,1200,1
 Monnina connectisepala,Monnina,f.-15.-20,500,1
 Myracrodruon urundeuva,Myracrodruon,e.-10.-15,500,1
 Myracrodruon urundeuva,Myracrodruon,f.-15.-20,1900,1
+Myracrodruon urundeuva,Myracrodruon,g.-20.-25,300,1
 Myrcia minutiflora,Myrcia,e.-10.-15,200,7
 Myrcianthes pungens,Myrcianthes,f.-15.-20,1000,3
+Myrcianthes pungens,Myrcianthes,g.-20.-25,1500,1
 Myrsine laetevirens,Myrsine,e.-10.-15,600,7
 Myrsine laetevirens,Myrsine,f.-15.-20,1400,6
+Myrsine laetevirens,Myrsine,g.-20.-25,500,1
 Nordenstamia repanda,Nordenstamia,e.-10.-15,600,2
 Nordenstamia repanda,Nordenstamia,f.-15.-20,2000,1
 Ocotea glabriflora,Ocotea,e.-10.-15,300,23
@@ -6830,20 +6924,25 @@ Bellucia aequiloba,Bellucia,e.-10.-15,1400,3
 Bellucia aequiloba,Bellucia,f.-15.-20,1300,3
 Piper tucumanum,Piper,e.-10.-15,700,11
 Piper tucumanum,Piper,f.-15.-20,1100,8
+Piper tucumanum,Piper,g.-20.-25,1200,3
 Piptadenia robusta,Piptadenia,e.-10.-15,100,1
 Piptadenia robusta,Piptadenia,f.-15.-20,200,2
 Pisonia zapallo,Pisonia,e.-10.-15,300,2
 Pisonia zapallo,Pisonia,f.-15.-20,1700,2
+Pisonia zapallo,Pisonia,g.-20.-25,800,2
 Pogonopus tubulosus,Pogonopus,e.-10.-15,2300,1
 Pogonopus tubulosus,Pogonopus,f.-15.-20,1200,1
+Pogonopus tubulosus,Pogonopus,g.-20.-25,1500,1
 Pouteria juruana,Pouteria,e.-10.-15,1100,16
 Pseudobombax marginatum,Pseudobombax,e.-10.-15,400,2
 Pseudobombax marginatum,Pseudobombax,f.-15.-20,900,2
 Randia micracantha,Randia,f.-15.-20,2000,2
+Randia micracantha,Randia,g.-20.-25,1500,2
 Ruagea ovalis,Ruagea,e.-10.-15,600,6
 Ruagea ovalis,Ruagea,f.-15.-20,1100,5
 Ruprechtia apetala,Ruprechtia,e.-10.-15,400,2
 Ruprechtia apetala,Ruprechtia,f.-15.-20,2000,1
+Ruprechtia apetala,Ruprechtia,g.-20.-25,1300,2
 Schefflera allocotantha,Schefflera,e.-10.-15,100,2
 Schefflera allocotantha,Schefflera,f.-15.-20,200,2
 Schefflera herzogii,Schefflera,e.-10.-15,1100,2
@@ -6852,14 +6951,19 @@ Schinopsis brasiliensis,Schinopsis,e.-10.-15,1200,1
 Schinopsis brasiliensis,Schinopsis,f.-15.-20,1100,2
 Scutia buxifolia,Scutia,e.-10.-15,400,1
 Scutia buxifolia,Scutia,f.-15.-20,1000,1
+Scutia buxifolia,Scutia,g.-20.-25,1000,1
 Sebastiania brasiliensis,Sebastiania,e.-10.-15,400,1
 Sebastiania brasiliensis,Sebastiania,f.-15.-20,1800,1
+Sebastiania brasiliensis,Sebastiania,g.-20.-25,1500,1
 Siphoneugena occidentalis,Siphoneugena,e.-10.-15,900,2
 Siphoneugena occidentalis,Siphoneugena,f.-15.-20,1100,1
+Siphoneugena occidentalis,Siphoneugena,g.-20.-25,600,1
 Blepharocalyx salicifolius,Blepharocalyx,e.-10.-15,2000,1
 Blepharocalyx salicifolius,Blepharocalyx,f.-15.-20,2500,1
+Blepharocalyx salicifolius,Blepharocalyx,g.-20.-25,1600,1
 Bougainvillea stipitata,Bougainvillea,e.-10.-15,300,1
 Bougainvillea stipitata,Bougainvillea,f.-15.-20,2500,1
+Bougainvillea stipitata,Bougainvillea,g.-20.-25,1800,1
 Brunellia boliviana,Brunellia,e.-10.-15,900,7
 Brunellia boliviana,Brunellia,f.-15.-20,1700,2
 Brunellia cuzcoensis,Brunellia,e.-10.-15,600,7
@@ -6871,17 +6975,20 @@ Tachigali alba,Tachigali,e.-10.-15,1300,4
 Tachigali alba,Tachigali,f.-15.-20,200,1
 Terminalia triflora,Terminalia,e.-10.-15,600,4
 Terminalia triflora,Terminalia,f.-15.-20,1300,4
+Terminalia triflora,Terminalia,g.-20.-25,900,1
 Ternstroemia brachypoda,Ternstroemia,f.-15.-20,100,2
 Ternstroemia polyandra,Ternstroemia,e.-10.-15,600,3
 Ternstroemia polyandra,Ternstroemia,f.-15.-20,200,2
 Trichilia claussenii,Trichilia,e.-10.-15,1200,12
 Trichilia claussenii,Trichilia,f.-15.-20,1500,11
+Trichilia claussenii,Trichilia,g.-20.-25,1500,1
 Vatairea fusca,Vatairea,e.-10.-15,900,1
 Vochysia majuscula,Vochysia,e.-10.-15,500,4
 Weinmannia bangii,Weinmannia,e.-10.-15,600,17
 Weinmannia bangii,Weinmannia,f.-15.-20,1700,13
 Ximenia americana,Ximenia,e.-10.-15,400,1
 Ximenia americana,Ximenia,f.-15.-20,1600,1
+Ximenia americana,Ximenia,g.-20.-25,600,1
 Zanthoxylum pucro,Zanthoxylum,e.-10.-15,500,6
 Zanthoxylum pucro,Zanthoxylum,f.-15.-20,700,7
 Cariniana estrellensis,Cariniana,e.-10.-15,1600,1
@@ -6890,27 +6997,54 @@ Cecropia tacuna,Cecropia,e.-10.-15,1600,7
 Cecropia tacuna,Cecropia,f.-15.-20,200,4
 Chrysophyllum gonocarpum,Chrysophyllum,e.-10.-15,1200,7
 Chrysophyllum gonocarpum,Chrysophyllum,f.-15.-20,1900,3
+Chrysophyllum gonocarpum,Chrysophyllum,g.-20.-25,1200,2
 Chrysophyllum marginatum,Chrysophyllum,e.-10.-15,500,7
 Chrysophyllum marginatum,Chrysophyllum,f.-15.-20,1800,3
+Chrysophyllum marginatum,Chrysophyllum,g.-20.-25,800,2
 Cnicothamnus lorentzii,Cnicothamnus,f.-15.-20,2000,1
+Cnicothamnus lorentzii,Cnicothamnus,g.-20.-25,1500,1
 Cnidoscolus vitifolius,Cnidoscolus,f.-15.-20,100,1
+Cnidoscolus vitifolius,Cnidoscolus,g.-20.-25,400,1
 Coccoloba tiliacea,Coccoloba,f.-15.-20,1100,3
+Coccoloba tiliacea,Coccoloba,g.-20.-25,1600,1
+Cordia americana,Cordia,g.-20.-25,900,4
 Cordia trichotoma,Cordia,f.-15.-20,600,5
+Cordia trichotoma,Cordia,g.-20.-25,1300,4
 Cupania vernalis,Cupania,f.-15.-20,1200,3
+Cupania vernalis,Cupania,g.-20.-25,1200,1
 Eriotheca roseorum,Eriotheca,f.-15.-20,1000,2
 Juglans australis,Juglans,f.-15.-20,1000,2
+Juglans australis,Juglans,g.-20.-25,1200,1
 Kaunia saltensis,Kaunia,f.-15.-20,1000,1
+Kaunia saltensis,Kaunia,g.-20.-25,1400,1
 Libidibia paraguariensis,Libidibia,f.-15.-20,1900,1
+Libidibia paraguariensis,Libidibia,g.-20.-25,900,1
+Lonchocarpus lilloi,Lonchocarpus,g.-20.-25,800,1
 Loxopterygium grisebachii,Loxopterygium,f.-15.-20,1700,1
+Loxopterygium grisebachii,Loxopterygium,g.-20.-25,1000,1
 Miconia acutifolia,Miconia,f.-15.-20,100,35
 Ocotea porphyria,Ocotea,f.-15.-20,1300,11
+Ocotea porphyria,Ocotea,g.-20.-25,1300,2
 Piptadenia boliviana,Piptadenia,f.-15.-20,1000,2
 Pisonia ambigua,Pisonia,f.-15.-20,600,2
+Pisonia ambigua,Pisonia,g.-20.-25,900,2
 Schinopsis marginata,Schinopsis,f.-15.-20,2000,2
+Schinopsis marginata,Schinopsis,g.-20.-25,800,1
 Solanum symmetricum,Solanum,f.-15.-20,2300,9
+Solanum symmetricum,Solanum,g.-20.-25,1600,6
 Vassobia breviflora,Vassobia,f.-15.-20,1700,1
+Vassobia breviflora,Vassobia,g.-20.-25,2200,1
 Xylosma longipetiolata,Xylosma,f.-15.-20,200,1
+Xylosma longipetiolata,Xylosma,g.-20.-25,1000,2
+Xylosma pubescens,Xylosma,g.-20.-25,1500,2
 Zanthoxylum petiolare,Zanthoxylum,f.-15.-20,1300,7
+Zanthoxylum petiolare,Zanthoxylum,g.-20.-25,1000,4
 Bunchosia lindeniana,Bunchosia,f.-15.-20,1500,2
 Calycophyllum multiflorum,Calycophyllum,f.-15.-20,700,2
+Calycophyllum multiflorum,Calycophyllum,g.-20.-25,900,1
+Cedrela balansae,Cedrela,g.-20.-25,400,4
 Ceiba chodatii,Ceiba,f.-15.-20,800,3
+Ceiba chodatii,Ceiba,g.-20.-25,1000,2
+Erythroxylum argentinum,Erythroxylum,g.-20.-25,500,1
+Gleditsia amorphoides,Gleditsia,g.-20.-25,1700,1
+Cestrum parqui,Cestrum,g.-20.-25,900,1

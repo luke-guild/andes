@@ -63,14 +63,15 @@ def write_diff_file(threshold="", regions=[], species_data={}):
 
 """
 species_elevation_diff but pivotted to output 1 row per species,region pair
-always removes data from g.-20.-25
+(TEMP REMOVED) always removes data from g.-20.-25
 outputs multiple data sets filtered for "width", 
     i.e. only include data from species that occur in at least n regions
 """
 def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}):
     os.chdir(OUT_LOC)
 
-    for width in range(len([r for r in regions if r != 'g.-20.-25'])):
+    # for width in range(len([r for r in regions if r != 'g.-20.-25'])):
+    for width in range(len(regions)):
         output_csv = f'species_elevation_diff_filtered.{width + 1}.{threshold}.csv'
         with open(output_csv, 'w', newline='') as f:
             writer = csv.writer(f)
@@ -79,12 +80,14 @@ def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}
 
             # loop once for genus tallies
             for species, data in species_data.items():
-                valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                # valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                valid_regions = data.keys()
                 if (len(data.values()) < width + 1):
                     continue
                 genus = species.split(' ')[0]
                 for region in regions:
-                    if region != 'g.-20.-25' and data.get(region):
+                    # if region != 'g.-20.-25' and data.get(region):
+                    if data.get(region):
                         if (genus, region) in region_genus_count:
                             region_genus_count[(genus, region)] += 1
                         else:
@@ -92,12 +95,14 @@ def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}
 
             # loop again to write rows
             for species, data in species_data.items():
-                valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                # valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
+                valid_regions = data.keys()
                 if (len(valid_regions) < width + 1):
                     continue
                 genus = species.split(' ')[0]
                 for region in regions:
-                    if region != 'g.-20.-25' and data.get(region):
+                    # if region != 'g.-20.-25' and data.get(region):
+                    if data.get(region):
                         row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
                         writer.writerow(row)
 
