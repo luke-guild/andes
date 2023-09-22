@@ -38,11 +38,22 @@ def read_in_min_max_data(threshold="", regions=[]):
                         region_presence[region] = 1
                     else:
                         region_presence[region] += 1
+
+                    # species details
+                    if species not in species_data:
+                        species_data[species] = {
+                            "ele_range": {},
+                            "min_midpoint": {},
+                            "max_midpoint": {},
+                        }
+                    
+                    # add min and max elevations
+                    species_data[species]["min_midpoint"][region] = min_bracket
+                    species_data[species]["max_midpoint"][region] = max_bracket
+                    
                     # then calculate range/diff
                     value = max_bracket - min_bracket
-                    if species not in species_data:
-                        species_data[species] = {}
-                    species_data[species][region] = value
+                    species_data[species]["ele_range"][region] = value
 
     return species_data, region_presence
 
@@ -57,7 +68,25 @@ def write_diff_file(threshold="", regions=[], species_data={}):
         writer = csv.writer(f)
         writer.writerow(['species'] + regions + ['num_of_regions'])
         for species, data in species_data.items():
-            row = [species] + [data.get(region, 'N/A') for region in regions] + [len(data.keys())]
+            row = [species] + [data["ele_range"].get(region, 'N/A') for region in regions] + [len(data["ele_range"].keys())]
+            writer.writerow(row)
+
+
+"""
+"""
+def write_pivotted_diff_unified_files(threshold="", regions=[], species_data={}):
+    os.chdir(OUT_LOC)
+
+    output_csv = f'species_elevation_diff_unified.{threshold}.csv'
+    with open(output_csv, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['species', 'min_elevation', 'max_elevation', 'range'])
+        for species, data in species_data.items():
+            elevations = [data["ele_range"].get(r) for r in regions if data["ele_range"].get(r) != None]
+            min_elevation = min(elevations)
+            max_elevation = max(elevations)
+            elevation_range = max_elevation - min_elevation
+            row = [species] + [min_elevation, max_elevation, elevation_range]
             writer.writerow(row)
 
 
@@ -80,14 +109,14 @@ def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}
 
             # loop once for genus tallies
             for species, data in species_data.items():
-                # valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
-                valid_regions = data.keys()
-                if (len(data.values()) < width + 1):
+                # valid_regions = [region for region in data["ele_range"].keys() if region != 'g.-20.-25']
+                valid_regions = data["ele_range"].keys()
+                if (len(data["ele_range"].values()) < width + 1):
                     continue
                 genus = species.split(' ')[0]
                 for region in regions:
-                    # if region != 'g.-20.-25' and data.get(region):
-                    if data.get(region):
+                    # if region != 'g.-20.-25' and data["ele_range"].get(region):
+                    if data["ele_range"].get(region):
                         if (genus, region) in region_genus_count:
                             region_genus_count[(genus, region)] += 1
                         else:
@@ -96,14 +125,14 @@ def write_filtered_pivotted_diff_files(threshold="", regions=[], species_data={}
             # loop again to write rows
             for species, data in species_data.items():
                 # valid_regions = [region for region in data.keys() if region != 'g.-20.-25']
-                valid_regions = data.keys()
+                valid_regions = data["ele_range"].keys()
                 if (len(valid_regions) < width + 1):
                     continue
                 genus = species.split(' ')[0]
                 for region in regions:
-                    # if region != 'g.-20.-25' and data.get(region):
-                    if data.get(region):
-                        row = [species, genus, region, data.get(region), region_genus_count[(genus, region)]]
+                    # if region != 'g.-20.-25' and data["ele_range"].get(region):
+                    if data["ele_range"].get(region):
+                        row = [species, genus, region, data["ele_range"].get(region), region_genus_count[(genus, region)]]
                         writer.writerow(row)
 
 
@@ -130,4 +159,5 @@ if __name__ == "__main__":
         species_data, region_presence = read_in_min_max_data(threshold, regions)
         write_diff_file(threshold, regions, species_data)
         write_filtered_pivotted_diff_files(threshold, regions, species_data)
+        write_pivotted_diff_unified_files(threshold, regions, species_data)
         write_region_unique_species_count_file(threshold, region_presence)
